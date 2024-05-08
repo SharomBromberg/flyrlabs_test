@@ -1,0 +1,46 @@
+<div>
+    <label>
+        Origin:
+        <input [(ngModel)]="origin">
+    </label>
+    <label>
+        Destination:
+        <input [(ngModel)]="destination">
+    </label>
+    <label>
+        Currency:
+        <input [(ngModel)]="currency">
+    </label>
+    <label>
+        Type:
+        <select [(ngModel)]="type">
+            <option value="oneway">One Way</option>
+            <option value="roundtrip">Round Trip</option>
+        </select>
+    </label>
+    <button (click)="searchFlights()">Search Flights</button>
+</div>
+
+<!-- opcionB <div *ngIf="flights">
+    <h2>Flights</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Origin</th>
+                <th>Destination</th>
+                <th>Departure Date</th>
+                <th>Return Date</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let flight of flights">
+                <td>{{flight.origin}}</td>
+                <td>{{flight.destination}}</td>
+                <td>{{flight.departureDate}}</td>
+                <td>{{flight.returnDate}}</td>
+                <td>{{flight.price}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->

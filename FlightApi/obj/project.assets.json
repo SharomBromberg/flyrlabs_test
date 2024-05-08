@@ -695,11 +695,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SHAROM\\Desktop\\FlightApi\\FlightApi.csproj",
+      "projectUniqueName": "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightApi\\FlightApi.csproj",
       "projectName": "FlightApi",
-      "projectPath": "C:\\Users\\SHAROM\\Desktop\\FlightApi\\FlightApi.csproj",
+      "projectPath": "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightApi\\FlightApi.csproj",
       "packagesPath": "C:\\Users\\SHAROM\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SHAROM\\Desktop\\FlightApi\\obj\\",
+      "outputPath": "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\SHAROM\\AppData\\Roaming\\NuGet\\NuGet.Config",
