@@ -22,6 +22,7 @@ export class FlightListComponent implements OnInit {
   searchFlights(): void {
     this.flightService.getFlights(this.origin, this.destination, this.currency, this.type).subscribe(data => {
       this.journeys = [data];
+      console.log(this.journeys);
     }, error => {
       console.error('Error:', error);
     });
