@@ -44,4 +44,4 @@ En **ngOnInit()**, se llama al método getAllFlights() para obtener todos los vu
 en el archivo `fligh-list.component.html` se realizó el esqueleto del formulario, en el cual el usuario elegirá los parametros de busqueda para los vuelos, este incluye botones que muestran vuelos especificos o todos los vuelos, valores que posteriormente se mostrarán en la tabla al presionar los respectivos botones.
 en el archivo `fligh-list.component.scss` se están manejando media queries para que el diseño funcione de manera responsiva y se adapte a distintos tipos de dispositivos, los estilos se estan anidando para mantener un codigo limpio y organizado.
 
-**Tiempo de realización del proyecto, inicié el Lunes después del medio día, hasta las 00 horas del miércoles**
+**Tiempo de realización del proyecto, inicié el Lunes 6 de Mayo después del medio día, hasta las 00 horas del 9 de mayo**
