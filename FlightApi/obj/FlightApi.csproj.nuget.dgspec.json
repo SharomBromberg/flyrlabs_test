@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightApi\\FlightApi.csproj": {}
+    "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightApi\\FlightAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightApi\\FlightApi.csproj": {
+    "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightApi\\FlightAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightApi\\FlightApi.csproj",
-        "projectName": "FlightApi",
-        "projectPath": "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightApi\\FlightApi.csproj",
+        "projectUniqueName": "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightApi\\FlightAPI.csproj",
+        "projectName": "FlightAPI",
+        "projectPath": "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightApi\\FlightAPI.csproj",
         "packagesPath": "C:\\Users\\SHAROM\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightApi\\obj\\",
         "projectStyle": "PackageReference",
@@ -45,17 +45,33 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNet.WebApi.Core": {
+            "FixerSharp": {
               "target": "Package",
-              "version": "[5.3.0-preview1, )"
+              "version": "[1.2.2, )"
             },
-            "Microsoft.AspNetCore.OpenApi": {
+            "MediatR": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[108.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

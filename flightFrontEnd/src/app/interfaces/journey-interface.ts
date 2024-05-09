@@ -5,4 +5,5 @@ export interface JourneyInterface {
     origin: string;
     destination: string;
     price: number;
+    route: string;
 }

@@ -1,11 +1,10 @@
 import { TransportInterface } from "./transport-interface";
 
 export interface FlightInterface {
-    id: number;
+
+    transport: TransportInterface;
     origin: string;
     destination: string;
-    departureTime: Date;
-    arrivalTime: Date;
     price: number;
-    transport: TransportInterface;
+
 }

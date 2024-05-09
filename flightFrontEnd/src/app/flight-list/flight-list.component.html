@@ -1,46 +1,85 @@
-<div>
-    <label>
-        Origin:
-        <input [(ngModel)]="origin">
-    </label>
-    <label>
-        Destination:
-        <input [(ngModel)]="destination">
-    </label>
-    <label>
-        Currency:
-        <input [(ngModel)]="currency">
-    </label>
-    <label>
-        Type:
-        <select [(ngModel)]="type">
-            <option value="oneway">One Way</option>
-            <option value="roundtrip">Round Trip</option>
-        </select>
-    </label>
-    <button (click)="searchFlights()">Search Flights</button>
-</div>
+<div class="search">
+    <h1>Search a Flight</h1>
+    <div class="search__routes">
+        <div class="search__routes__box">
+            <h4>Origin:</h4>
+            <select [(ngModel)]="origin">
+                <option value="" disabled selected>Select</option>
+                <option *ngFor="let origin of origins" [value]="origin">{{origin}}</option>
+            </select>
+        </div>
+        <div class="search__routes__box">
+            <h4>Destination:</h4>
+            <select [(ngModel)]="destination">
+                <option value="" disabled selected>Select</option>
+                <option *ngFor="let destination of destinations" [value]="destination">{{destination}}</option>
+            </select>
+        </div>
+    </div>
+    <div class="search__routes">
+        <div class="search__routes__box">
+            <h4> Currency:</h4>
+            <select [(ngModel)]="currency">
+                <option value="" disabled selected>Select</option>
+                <option *ngFor="let currency of currencies" [value]="currency">{{currency}}</option>
+            </select>
+        </div>
+        <div class="search__routes__box">
+            <h4>Type:</h4>
 
-<!-- opcionB <div *ngIf="flights">
-    <h2>Flights</h2>
-    <table>
+            <select [(ngModel)]="type">
+                <option value="" disabled selected>Select</option>
+                <option value="oneway">One Way</option>
+                <option value="roundtrip">Round Trip</option>
+            </select>
+        </div>
+    </div>
+
+    <button (click)="displaySearchedFlights()">Search</button>
+    <button (click)="displayAllFlights()">All available flights</button>
+</div>
+<div class="result">
+    <h2>Vuelos disponibles</h2>
+    <table *ngIf="displayFlights">
         <thead>
             <tr>
+                <th>Flight Carrier</th>
+                <th>Flight Number</th>
                 <th>Origin</th>
                 <th>Destination</th>
-                <th>Departure Date</th>
-                <th>Return Date</th>
                 <th>Price</th>
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let flight of flights">
+            <tr *ngFor="let flight of allFlights">
+                <td>{{flight.transport.flightCarrier}}</td>
+                <td>{{flight.transport.flightNumber}}</td>
                 <td>{{flight.origin}}</td>
                 <td>{{flight.destination}}</td>
-                <td>{{flight.departureDate}}</td>
-                <td>{{flight.returnDate}}</td>
                 <td>{{flight.price}}</td>
             </tr>
         </tbody>
     </table>
-</div> -->
+    <table *ngIf="displayJourneys">
+        <thead>
+            <tr>
+                <th>Flight Carrier</th>
+                <th>Flight Number</th>
+                <th>Origin</th>
+                <th>Destination</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let journey of journeys">
+                <tr *ngFor="let flight of journey.flights">
+                    <td>{{flight.transport.flightCarrier}}</td>
+                    <td>{{flight.transport.flightNumber}}</td>
+                    <td>{{flight.origin}}</td>
+                    <td>{{flight.destination}}</td>
+                    <td>{{flight.price}}</td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>

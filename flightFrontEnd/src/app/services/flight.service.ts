@@ -23,8 +23,7 @@ export class FlightService {
   getRoundTripFlights(origin: string, destination: string, currency: string): Observable<JourneyInterface> {
     return this.http.get<JourneyInterface>(`${this.apiUrl}/Flight/Flights?origin=${origin}&destination=${destination}&currency=${currency}&flightType=roundtrip`);
   }
-
-  getFlights(origin: string, destination: string, currency: string, flightType: string): Observable<JourneyInterface> {
-    return this.http.get<JourneyInterface>(`${this.apiUrl}/Flight/Flights?origin=${origin}&destination=${destination}&currency=${currency}&flightType=${flightType}`);
+  getFlights(origin: string, destination: string, currency: string, flightType: string): Observable<JourneyInterface[]> {
+    return this.http.get<JourneyInterface[]>(`${this.apiUrl}/Flight/Flights?origin=${origin}&destination=${destination}&currency=${currency}&flightType=${flightType}`);
   }
-}
+} 
