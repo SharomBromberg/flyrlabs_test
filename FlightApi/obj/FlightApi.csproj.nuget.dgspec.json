@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightApi\\FlightAPI.csproj": {}
+    "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightAPI\\FlightAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightApi\\FlightAPI.csproj": {
+    "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightAPI\\FlightAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightApi\\FlightAPI.csproj",
+        "projectUniqueName": "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightAPI\\FlightAPI.csproj",
         "projectName": "FlightAPI",
-        "projectPath": "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightApi\\FlightAPI.csproj",
+        "projectPath": "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightAPI\\FlightAPI.csproj",
         "packagesPath": "C:\\Users\\SHAROM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightApi\\obj\\",
+        "outputPath": "C:\\Users\\SHAROM\\Desktop\\PruebaMayo\\FlightAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\SHAROM\\AppData\\Roaming\\NuGet\\NuGet.Config",
